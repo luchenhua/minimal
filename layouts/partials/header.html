@@ -25,6 +25,15 @@
           gtag('config', '{{ .Site.GoogleAnalytics }}');
         </script>
         {{ end }}
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?97fd5fdaa7616a147eee6d3a78d8f53b";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
     </head>
 
     {{ if .Site.Params.MathJax | default true }}
